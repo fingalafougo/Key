@@ -43,7 +43,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Colors.white,
         body: NestedScrollView(
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
@@ -202,691 +202,706 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             builder: (context) {
               return SafeArea(
                 top: false,
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        context.pushNamed('HomePage');
-                      },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/ad.jpg',
-                          width: 427.0,
-                          height: 168.0,
-                          fit: BoxFit.fitWidth,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Celulares',
-                      style: GoogleFonts.getFont(
-                        'Lato',
-                        color: Color(0xFF504F4F),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        width: double.infinity,
-                        height: 500.0,
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 40.0),
-                              child: PageView(
-                                controller: _model.pageViewController1 ??=
-                                    PageController(initialPage: 0),
-                                scrollDirection: Axis.horizontal,
-                                children: [
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keyphone.png',
-                                              width: 240.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.90, -0.97),
-                                        child: Text(
-                                          'Keyphone',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.89, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keyphone.png',
-                                              width: 240.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.90, -0.97),
-                                        child: Text(
-                                          'Keyphone',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.89, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keyphone.png',
-                                              width: 240.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.90, -0.97),
-                                        child: Text(
-                                          'Keyphone',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.89, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                child: Align(
+                  alignment: AlignmentDirectional(0.00, -1.00),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Align(
+                          alignment: AlignmentDirectional(0.00, -1.00),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('HomePage');
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/ad.jpg',
+                                width: 650.0,
+                                height: 168.0,
+                                fit: BoxFit.fitWidth,
                               ),
                             ),
-                            Align(
-                              alignment: AlignmentDirectional(-1.00, 1.00),
-                              child: Padding(
+                          ),
+                        ),
+                        Text(
+                          'Celulares',
+                          style: GoogleFonts.getFont(
+                            'Lato',
+                            color: Color(0xFF504F4F),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 170.0,
+                          child: Stack(
+                            children: [
+                              Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 0.0, 16.0),
-                                child:
-                                    smooth_page_indicator.SmoothPageIndicator(
+                                    0.0, 0.0, 0.0, 40.0),
+                                child: PageView(
                                   controller: _model.pageViewController1 ??=
                                       PageController(initialPage: 0),
-                                  count: 3,
-                                  axisDirection: Axis.horizontal,
-                                  onDotClicked: (i) async {
-                                    await _model.pageViewController1!
-                                        .animateToPage(
-                                      i,
-                                      duration: Duration(milliseconds: 500),
-                                      curve: Curves.ease,
-                                    );
-                                  },
-                                  effect:
-                                      smooth_page_indicator.ExpandingDotsEffect(
-                                    expansionFactor: 3.0,
-                                    spacing: 8.0,
-                                    radius: 16.0,
-                                    dotWidth: 16.0,
-                                    dotHeight: 8.0,
-                                    dotColor:
-                                        FlutterFlowTheme.of(context).accent1,
-                                    activeDotColor: Color(0xFF504F4F),
-                                    paintStyle: PaintingStyle.fill,
+                                  scrollDirection: Axis.horizontal,
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keyphone.png',
+                                                width: 240.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keyphone',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keyphone.png',
+                                                width: 240.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keyphone',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keyphone.png',
+                                                width: 240.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keyphone',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, 1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 0.0, 16.0),
+                                  child:
+                                      smooth_page_indicator.SmoothPageIndicator(
+                                    controller: _model.pageViewController1 ??=
+                                        PageController(initialPage: 0),
+                                    count: 3,
+                                    axisDirection: Axis.horizontal,
+                                    onDotClicked: (i) async {
+                                      await _model.pageViewController1!
+                                          .animateToPage(
+                                        i,
+                                        duration: Duration(milliseconds: 500),
+                                        curve: Curves.ease,
+                                      );
+                                    },
+                                    effect: smooth_page_indicator
+                                        .ExpandingDotsEffect(
+                                      expansionFactor: 3.0,
+                                      spacing: 8.0,
+                                      radius: 16.0,
+                                      dotWidth: 16.0,
+                                      dotHeight: 8.0,
+                                      dotColor:
+                                          FlutterFlowTheme.of(context).accent1,
+                                      activeDotColor: Color(0xFF504F4F),
+                                      paintStyle: PaintingStyle.fill,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Relógios',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
-                            color: Color(0xFF504F4F),
+                            ],
                           ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        width: double.infinity,
-                        height: 500.0,
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 40.0),
-                              child: PageView(
-                                controller: _model.pageViewController2 ??=
-                                    PageController(initialPage: 0),
-                                scrollDirection: Axis.horizontal,
-                                children: [
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keywhatch.png',
-                                              width: 268.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.95, -0.98),
-                                        child: Text(
-                                          'Keywatch',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.93, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
+                        ),
+                        Text(
+                          'Relógios',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Color(0xFF504F4F),
                                   ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keywhatch.png',
-                                              width: 268.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.95, -0.98),
-                                        child: Text(
-                                          'Keywatch',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.93, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keywhatch.png',
-                                              width: 268.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.95, -0.98),
-                                        child: Text(
-                                          'Keywatch',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.93, -0.47),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Align(
-                              alignment: AlignmentDirectional(-1.00, 1.00),
-                              child: Padding(
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 170.0,
+                          child: Stack(
+                            children: [
+                              Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 0.0, 16.0),
-                                child:
-                                    smooth_page_indicator.SmoothPageIndicator(
+                                    0.0, 0.0, 0.0, 40.0),
+                                child: PageView(
                                   controller: _model.pageViewController2 ??=
                                       PageController(initialPage: 0),
-                                  count: 3,
-                                  axisDirection: Axis.horizontal,
-                                  onDotClicked: (i) async {
-                                    await _model.pageViewController2!
-                                        .animateToPage(
-                                      i,
-                                      duration: Duration(milliseconds: 500),
-                                      curve: Curves.ease,
-                                    );
-                                  },
-                                  effect:
-                                      smooth_page_indicator.ExpandingDotsEffect(
-                                    expansionFactor: 3.0,
-                                    spacing: 8.0,
-                                    radius: 16.0,
-                                    dotWidth: 16.0,
-                                    dotHeight: 8.0,
-                                    dotColor:
-                                        FlutterFlowTheme.of(context).accent1,
-                                    activeDotColor: Color(0xFF504F4F),
-                                    paintStyle: PaintingStyle.fill,
+                                  scrollDirection: Axis.horizontal,
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keywhatch.png',
+                                                width: 268.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keywatch',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keywhatch.png',
+                                                width: 268.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keywatch',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keywhatch.png',
+                                                width: 268.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.98),
+                                          child: Text(
+                                            'Keywatch',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, 1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 0.0, 16.0),
+                                  child:
+                                      smooth_page_indicator.SmoothPageIndicator(
+                                    controller: _model.pageViewController2 ??=
+                                        PageController(initialPage: 0),
+                                    count: 3,
+                                    axisDirection: Axis.horizontal,
+                                    onDotClicked: (i) async {
+                                      await _model.pageViewController2!
+                                          .animateToPage(
+                                        i,
+                                        duration: Duration(milliseconds: 500),
+                                        curve: Curves.ease,
+                                      );
+                                    },
+                                    effect: smooth_page_indicator
+                                        .ExpandingDotsEffect(
+                                      expansionFactor: 3.0,
+                                      spacing: 8.0,
+                                      radius: 16.0,
+                                      dotWidth: 16.0,
+                                      dotHeight: 8.0,
+                                      dotColor:
+                                          FlutterFlowTheme.of(context).accent1,
+                                      activeDotColor: Color(0xFF504F4F),
+                                      paintStyle: PaintingStyle.fill,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Notebooks',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
-                            color: Color(0xFF504F4F),
+                            ],
                           ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        width: double.infinity,
-                        height: 500.0,
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 40.0),
-                              child: PageView(
-                                controller: _model.pageViewController3 ??=
-                                    PageController(initialPage: 0),
-                                scrollDirection: Axis.horizontal,
-                                children: [
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keybook.png',
-                                              width: 237.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.94, -0.98),
-                                        child: Text(
-                                          'Keybook',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.92, -0.43),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
+                        ),
+                        Text(
+                          'Notebooks',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Color(0xFF504F4F),
                                   ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keybook.png',
-                                              width: 237.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.94, -0.98),
-                                        child: Text(
-                                          'Keybook',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.92, -0.43),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.09, 0.00),
-                                        child: InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            context.pushNamed('HomePage');
-                                          },
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/keybook.png',
-                                              width: 237.0,
-                                              height: 203.0,
-                                              fit: BoxFit.contain,
-                                              alignment: Alignment(1.00, 0.00),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.94, -0.98),
-                                        child: Text(
-                                          'Keybook',
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Colors.black,
-                                            fontSize: 21.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.92, -0.43),
-                                        child: AutoSizeText(
-                                          'A partir de R\$ 399,99',
-                                          textAlign: TextAlign.start,
-                                          style: GoogleFonts.getFont(
-                                            'Lato',
-                                            color: Color(0xFF504F4F),
-                                            fontSize: 9.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Align(
-                              alignment: AlignmentDirectional(-1.00, 1.00),
-                              child: Padding(
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 170.0,
+                          child: Stack(
+                            children: [
+                              Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 0.0, 16.0),
-                                child:
-                                    smooth_page_indicator.SmoothPageIndicator(
+                                    0.0, 0.0, 0.0, 40.0),
+                                child: PageView(
                                   controller: _model.pageViewController3 ??=
                                       PageController(initialPage: 0),
-                                  count: 3,
-                                  axisDirection: Axis.horizontal,
-                                  onDotClicked: (i) async {
-                                    await _model.pageViewController3!
-                                        .animateToPage(
-                                      i,
-                                      duration: Duration(milliseconds: 500),
-                                      curve: Curves.ease,
-                                    );
-                                  },
-                                  effect:
-                                      smooth_page_indicator.ExpandingDotsEffect(
-                                    expansionFactor: 3.0,
-                                    spacing: 8.0,
-                                    radius: 16.0,
-                                    dotWidth: 16.0,
-                                    dotHeight: 8.0,
-                                    dotColor:
-                                        FlutterFlowTheme.of(context).accent1,
-                                    activeDotColor: Color(0xFF504F4F),
-                                    paintStyle: PaintingStyle.fill,
+                                  scrollDirection: Axis.horizontal,
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keybook.png',
+                                                width: 237.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.96, -0.99),
+                                          child: Text(
+                                            'Keybook',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keybook.png',
+                                                width: 237.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.96, -0.99),
+                                          child: Text(
+                                            'Keybook',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-0.09, 0.00),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('HomePage');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/keybook.png',
+                                                width: 237.0,
+                                                height: 130.0,
+                                                fit: BoxFit.contain,
+                                                alignment:
+                                                    Alignment(1.00, 0.00),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.97),
+                                          child: Text(
+                                            'Keybook',
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Colors.black,
+                                              fontSize: 21.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.95, -0.45),
+                                          child: AutoSizeText(
+                                            'A partir de R\$ 399,99',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.getFont(
+                                              'Lato',
+                                              color: Color(0xFF504F4F),
+                                              fontSize: 9.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, 1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 0.0, 16.0),
+                                  child:
+                                      smooth_page_indicator.SmoothPageIndicator(
+                                    controller: _model.pageViewController3 ??=
+                                        PageController(initialPage: 0),
+                                    count: 3,
+                                    axisDirection: Axis.horizontal,
+                                    onDotClicked: (i) async {
+                                      await _model.pageViewController3!
+                                          .animateToPage(
+                                        i,
+                                        duration: Duration(milliseconds: 500),
+                                        curve: Curves.ease,
+                                      );
+                                    },
+                                    effect: smooth_page_indicator
+                                        .ExpandingDotsEffect(
+                                      expansionFactor: 3.0,
+                                      spacing: 8.0,
+                                      radius: 16.0,
+                                      dotWidth: 16.0,
+                                      dotHeight: 8.0,
+                                      dotColor:
+                                          FlutterFlowTheme.of(context).accent1,
+                                      activeDotColor: Color(0xFF504F4F),
+                                      paintStyle: PaintingStyle.fill,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               );
             },
