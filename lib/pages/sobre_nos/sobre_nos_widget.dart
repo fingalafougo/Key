@@ -49,21 +49,30 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
               floating: false,
               backgroundColor: Color(0xFF504F4F),
               automaticallyImplyLeading: false,
-              leading: ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.asset(
-                  'assets/images/imagem_2023-09-15_210359178-removebg-preview.png',
-                  width: 100.0,
-                  height: 100.0,
-                  fit: BoxFit.fitHeight,
+              leading: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('HomePage');
+                },
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/imagem_2023-09-15_210359178-removebg-preview.png',
+                    width: 100.0,
+                    height: 100.0,
+                    fit: BoxFit.fitHeight,
+                  ),
                 ),
               ),
               title: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('HomePage');
                     },
                     text: 'Produtos',
                     options: FFButtonOptions(
@@ -88,8 +97,8 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                     ),
                   ),
                   FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('HomePage');
                     },
                     text: 'Carrinho',
                     options: FFButtonOptions(
@@ -243,7 +252,7 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 0.0),
                                     child: Text(
-                                      'Trabalhe conosco',
+                                      'Nos contate',
                                       textAlign: TextAlign.start,
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
