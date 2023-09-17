@@ -43,7 +43,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Colors.white,
         body: NestedScrollView(
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
