@@ -70,117 +70,103 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
               title: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('HomePage');
-                    },
-                    text: 'Produtos',
-                    options: FFButtonOptions(
-                      width: MediaQuery.sizeOf(context).width * 0.18,
-                      height: 43.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFF504F4F),
-                      textStyle: GoogleFonts.getFont(
-                        'Lato',
-                        color: Colors.white,
-                        fontSize: 12.0,
+                  Expanded(
+                    child: Align(
+                      alignment: AlignmentDirectional(1.00, 0.00),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('Catalogo');
+                        },
+                        text: 'Catalogo',
+                        options: FFButtonOptions(
+                          height: 43.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: Color(0xFF504F4F),
+                          textStyle: GoogleFonts.getFont(
+                            'Lato',
+                            color: Colors.white,
+                            fontSize: 12.0,
+                          ),
+                          elevation: 0.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
                       ),
-                      elevation: 0.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                  ),
-                  FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('HomePage');
-                    },
-                    text: 'Carrinho',
-                    options: FFButtonOptions(
-                      width: MediaQuery.sizeOf(context).width * 0.18,
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFF504F4F),
-                      textStyle: GoogleFonts.getFont(
-                        'Lato',
-                        fontSize: 12.0,
-                      ),
-                      elevation: 0.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
                   Expanded(
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      child: Container(
-                        width: MediaQuery.sizeOf(context).width * 0.5,
-                        child: TextFormField(
-                          controller: _model.textController,
-                          textInputAction: TextInputAction.done,
-                          obscureText: false,
-                          decoration: InputDecoration(
-                            isDense: true,
-                            labelText: 'Buscar',
-                            labelStyle: GoogleFonts.getFont(
+                    child: Align(
+                      alignment: AlignmentDirectional(1.00, 0.00),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                        child: Container(
+                          width: MediaQuery.sizeOf(context).width * 0.4,
+                          child: TextFormField(
+                            controller: _model.textController,
+                            onFieldSubmitted: (_) async {
+                              context.pushNamed('SobreNos');
+                            },
+                            textInputAction: TextInputAction.done,
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              isDense: true,
+                              labelText: 'Buscar',
+                              labelStyle: GoogleFonts.getFont(
+                                'Lato',
+                                color: Colors.black,
+                              ),
+                              hintStyle:
+                                  FlutterFlowTheme.of(context).labelMedium,
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.black,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              errorBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              focusedErrorBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              filled: true,
+                              fillColor: Colors.white,
+                              prefixIcon: Icon(
+                                Icons.search,
+                                color: Color(0xFF504F4F),
+                              ),
+                            ),
+                            style: GoogleFonts.getFont(
                               'Lato',
                               color: Colors.black,
+                              fontWeight: FontWeight.normal,
                             ),
-                            hintStyle: FlutterFlowTheme.of(context).labelMedium,
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.black,
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).primary,
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).error,
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            focusedErrorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).error,
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            filled: true,
-                            fillColor: Colors.white,
-                            prefixIcon: Icon(
-                              Icons.search,
-                              color: Color(0xFF504F4F),
-                            ),
+                            validator: _model.textControllerValidator
+                                .asValidator(context),
                           ),
-                          style: GoogleFonts.getFont(
-                            'Lato',
-                            color: Colors.black,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          validator: _model.textControllerValidator
-                              .asValidator(context),
                         ),
                       ),
                     ),
