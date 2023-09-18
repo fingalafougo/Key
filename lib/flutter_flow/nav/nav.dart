@@ -83,6 +83,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'SobreNos')
               : SobreNosWidget(),
+        ),
+        FFRoute(
+          name: 'Catalogo',
+          path: '/catalogo',
+          builder: (context, params) => CatalogoWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
