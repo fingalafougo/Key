@@ -315,270 +315,473 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
-                        GridView(
-                          padding: EdgeInsets.zero,
-                          gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 5,
-                            crossAxisSpacing: 10.0,
-                            mainAxisSpacing: 10.0,
-                            childAspectRatio: 1.0,
+                        Align(
+                          alignment: AlignmentDirectional(0.00, 0.00),
+                          child: GridView(
+                            padding: EdgeInsets.zero,
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 5,
+                              crossAxisSpacing: 10.0,
+                              mainAxisSpacing: 10.0,
+                              childAspectRatio: 1.0,
+                            ),
+                            shrinkWrap: true,
+                            scrollDirection: Axis.vertical,
+                            children: [
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keyphone4.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-2.30, 1.79),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keybook3.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-11.33, 1.74),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keywhatch3.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(1.85, 1.74),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keyphone3.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-10.89, 1.68),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keybook2.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-12.52, 1.74),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keywatch.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-2.30, 1.77),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keyphone2.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-3.93, 1.77),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keybook1.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-5.56, 1.77),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keywhatch1.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(0.22, 1.77),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/keyphone.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tablet: false,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-1.41, 1.77),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                              fontSize: 13.0,
+                                            ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    phone: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.21, 1.08),
+                                      child: Text(
+                                        'A partir de R\$ 399,99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
                           ),
-                          shrinkWrap: true,
-                          scrollDirection: Axis.vertical,
-                          children: [
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keyphone4.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keybook3.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keywhatch3.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keyphone3.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keybook2.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keywatch.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keyphone2.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keybook1.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keywhatch1.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(-0.03, 1.02),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/keyphone.png',
-                                    width: 300.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
-                                  child: Text(
-                                    'A partir de R\$ 399,99',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Colors.black,
-                                          fontSize: 13.0,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
                         ),
                       ],
                     ),
