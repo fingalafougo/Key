@@ -355,7 +355,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -369,7 +370,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -400,7 +405,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -414,7 +420,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -445,7 +455,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -459,7 +470,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -490,7 +505,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -504,7 +520,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -535,7 +555,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -549,7 +570,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -580,7 +605,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -594,7 +620,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -625,7 +655,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -639,7 +670,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -670,7 +705,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -684,7 +720,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -715,7 +755,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              fontSize: 13.0,
+                                              color: Colors.black,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -729,7 +770,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
@@ -761,7 +806,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .override(
                                               fontFamily: 'Readex Pro',
                                               color: Colors.black,
-                                              fontSize: 13.0,
+                                              fontSize: 12.0,
                                             ),
                                       ),
                                     ),
@@ -775,7 +820,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       child: Text(
                                         'A partir de R\$ 399,99',
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
                                       ),
                                     ),
                                 ],
