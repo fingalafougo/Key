@@ -246,7 +246,7 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                                             fontFamily: 'Outfit',
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
-                                            fontSize: 21.0,
+                                            fontSize: 19.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
@@ -301,7 +301,7 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                                             fontFamily: 'Outfit',
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
-                                            fontSize: 21.0,
+                                            fontSize: 19.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
